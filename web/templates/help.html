@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RoboArm Viewer</title>
+    <meta name="description" content="RoboArm | CS162 project">
+    <meta name="author" content="Mikulas Plesak">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles_robo.css') }}">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <!-- <script src="jquery.js"></script> -->
+</head>
+
+<body>
+    <main class="recording_help rec_obs">
+        <div class="title small_logo medium_logo">
+            <a href="{{ url_for('welcome') }}">
+                <h3>RoboArm: Help</h3>
+            </a>
+        </div>
+        <div class="log_in_button_parent">
+            <p class="sign-in-buttons startbtn" onClick="window.location.href = '{{ url_for('welcome') }}'">START!</p>
+        </div>
+
+        <div class="tutorial">
+            <video class = "tutorial-video" autoplay src="static/videos/tutorial.webm" controls></video>
+        </div>
+        
+        <div class="email_info">
+            <p class="txt_info"> If you have any further questions about RoboArm, please feel free to email us at <a href="mailto:help@roboarm.com">help@roboarm.com</a> and our team will get back to you as soon as posisble. </p>
+        </div>
+
+
+        <div class="credits">&copy; RoboArm Team 2020</div>
+    </main>
+</body>
+
+</html>
